@@ -49,7 +49,7 @@ div button:hover{ font-weight: bold;}
 
 
 button{
-  background-color:rgb(0, 140, 255);border-radius: 8px;padding: 0%;margin: 0%;font-size: 25px ; color: white;margin: 0 0;text-align: center;text-decoration: none;border: none;
+  background-color:rgb(0, 140, 255);width: auto; border-radius: 8px;padding: 0%;margin: 0%;font-size: 25px ; color: white;margin: 0 0;text-align: center;text-decoration: none;border: none;
 }
 </style>
 </head>
@@ -86,7 +86,7 @@ button{
         </div>
 <br>
         <form action="{{ url_for('predict') }}" method="POST">
-            <textarea style="background: none;color: white;" class='message-box' name="message" rows="22" cols="80" placeholder="Check for spam messages..."></textarea><br/>
+            <textarea style="background: none;color: white; width: 50%;" class='message-box' name="message" rows="22" placeholder="Check for spam messages..."></textarea><br/>
             <br>
            <a href=""><input type="submit" value=" Predict " style="color: white; text-align: center;font-size: 25PX; background-color:rgb(0, 140, 255);border-radius: 10px; padding: 0%;margin: 0%; border: none;">
            </a>
